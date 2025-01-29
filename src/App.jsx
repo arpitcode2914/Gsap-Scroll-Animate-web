@@ -2,7 +2,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
 import './App.css';
-
+// import sun from "../public/sun"
+// import cloud1 from "../public/cloud1"
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
 
@@ -156,8 +157,10 @@ function App() {
       </div>
 
       <div className='content_2'>
-          <img src="../public/sun.png" alt="moon png" className='star_png'/>
-          <img src="../public/cloud1.png" alt="cloud" className='cloud_1'/>   
+          <img src="/sun.png" alt="moon png" className='star_png'/>
+          {/* <img src={sun} alt="moon png" className='star_png'/> */}
+          {/* <img src={cloud1} alt="cloud" className='cloud_1'/>    */}
+          <img src="/cloud1.png" alt="cloud" className='cloud_1'/>   
           {/* <img src="../public/cloud2.png" alt="cloud" className='cloud_2'/>    */}
       </div>
 
